@@ -4,34 +4,70 @@ import java.util.*;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-class Printer
-{
-	public <inputType> void printArray(inputType[] array) {
-		for(int i=0; i<array.length; i++) {
-			System.out.println(array[i]);
-		}
-	}	
+public class Test{
+	public static void main(String[] args) {
+		
+	}
 }
 
-public class Test{  
-	public static void main(String[] args) {
-		 Printer myPrinter = new Printer();
-	        Integer[] intArray = { 1, 2, 3 };
-	        String[] stringArray = {"Hello", "World"};
-	        myPrinter.printArray(intArray);
-	        myPrinter.printArray(stringArray);
-	        int count = 0;
 
-	        for (Method method : Printer.class.getDeclaredMethods()) {
-	            String name = method.getName();
 
-	            if(name.equals("printArray"))
-	                count++;
-	        }
+//class Animal {
+//    public static void testClassMethod() {
+//        System.out.println("The static method in Animal");
+//    }
+//    public void testInstanceMethod() {
+//        System.out.println("The instance method in Animal");
+//    }
+//}
+//
+//public class Test extends Animal {
+//    public static void testClassMethod() {
+//        System.out.println("The static method in Cat");
+//    }
+//    public void testInstanceMethod() {
+//        System.out.println("The instance method in Cat");
+//    }
+//
+//    public static void main(String[] args) {
+//        Test myCat = new Test();
+//        Animal myAnimal = myCat;
+//        Animal.testClassMethod();
+//        myAnimal.testInstanceMethod();
+//    }
+//}
 
-	        if(count > 1)System.out.println("Method overloading is not allowed!");
-	      
-	    
+
+
+//class Printer
+//{
+//	public <inputType> void printArray(inputType[] array) {
+//		for(int i=0; i<array.length; i++) {
+//			System.out.println(array[i]);
+//		}
+//	}	
+//}
+//
+//public class Test{  
+//	public static void main(String[] args) {
+//		 Printer myPrinter = new Printer();
+//	        Integer[] intArray = { 1, 2, 3 };
+//	        String[] stringArray = {"Hello", "World"};
+//	        myPrinter.printArray(intArray);
+//	        myPrinter.printArray(stringArray);
+//	        int count = 0;
+//
+//	        for (Method method : Printer.class.getDeclaredMethods()) {
+//	            String name = method.getName();
+//
+//	            if(name.equals("printArray"))
+//	                count++;
+//	        }
+//
+//	        if(count > 1)System.out.println("Method overloading is not allowed!");
+//	      
+//	}	
+//}
 		
 		
 		
@@ -127,8 +163,7 @@ public class Test{
 //		a1.remove(1);
 //		a1.remove(2);
 //		System.out.println("modified list :"+a1);
-	}	
-}
+	
 //		long a = s.length();
 //    	long b = n/a;
 //    	String s1 = "";
